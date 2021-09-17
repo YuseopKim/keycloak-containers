@@ -45,5 +45,5 @@ jobs:
       - name: Push to GitHub Packages
         run : |
             docker build --build-arg GIT_REPO=YuseopKim/keycloak \
-            --build-arg GIT_BRANCH=malangmalang-idp .
+            --build-arg GIT_BRANCH=origin/malangmalang-idp .
             docker push ${{ env.IMAGE_NAME }}:${{ steps.image.outputs.version }}
