@@ -45,5 +45,5 @@ jobs:
       - name: Push to GitHub Packages
         run : |
             docker build --build-arg GIT_REPO=YuseopKim/keycloak \
-            -t ${{ env.IMAGE_NAME }} -t ${{ env.IMAGE_NAME }}:${{ steps.image.outputs.version }} .
+            -t ${{ env.IMAGE_NAME }} -t ${{ env.IMAGE_NAME }}:${{ steps.image.outputs.version }} ./server
             docker push ${{ env.IMAGE_NAME }}:${{ steps.image.outputs.version }}
