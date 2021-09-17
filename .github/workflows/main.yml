@@ -9,6 +9,7 @@ on:
     - "**/*.js"
     - "**/*.java"
     - "**/*.py"
+    - "**/Dockerfile"
   push:
     paths:
     - "**/*.*"
