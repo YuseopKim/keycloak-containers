@@ -12,7 +12,7 @@ on:
   push:
     paths:
     - "**/*.*"
-    branches: [ master ]
+    branches: [ malangmalang-idp ]
  
 env:
   # 이미지 이름을 환경변수로 등록합니다.
